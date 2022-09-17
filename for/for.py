@@ -87,3 +87,24 @@ for n in x:
 
 for item in range(3, 20, 2):
     print(item)
+
+#break, continue, pass
+some_list = [1,2,3,4,5,6,7,8,9,10]
+
+# for item in  some_list:
+    #Some comment
+# print("another code")
+
+for item in  some_list:
+    pass
+print("another code")
+
+for item in some_list:
+    if item == 5:
+        break
+    print(item)
+
+for item in some_list:
+    if item == 5:
+        continue
+    print(item)
