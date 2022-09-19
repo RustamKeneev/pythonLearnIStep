@@ -83,6 +83,26 @@ def find_hello_tex(text):
         return False
 find_hello_tex("Hello Mottor")
 
+def is_string_in_text(string, text):
+    """
+    :param string:
+    :param text:
+    :return: string in text
+    """
+    return string in text
+print(is_string_in_text("l", "World"))
+
+def gender_text(name, gender):
+    if gender == "male":
+        print("Hello " + name + " your gender Man")
+        return gender
+    elif gender == "female":
+        print("Hello " + name + " your gender Female")
+        return gender
+    else:
+        print("Hello " + name + "I dont known your gender")
+returned_value = gender_text('John','male')
+
 
 
 
