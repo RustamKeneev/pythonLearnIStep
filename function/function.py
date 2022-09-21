@@ -130,11 +130,11 @@ import gtts
 from playsound import playsound
 def sayHello():#Отличие от переменнных название функции заключается открываюшей и закрывающей скобкой
     print("Hello")
-    # # make request to google to get synthesis
-    # tts = gtts.gTTS("Кандайсын Rustam Aka",lang="ru")
-    # # save the audio file
-    # tts.save("hello.mp3")
-    # # play the audio file
-    # playsound("hello.mp3")
+    # make request to google to get synthesis
+    tts = gtts.gTTS("Кандайсын Rustam Aka Откройте новый файл Python и импортируйте",lang="ru")
+    # save the audio file
+    tts.save("hello.mp3")
+    # play the audio file
+    playsound("hello.mp3")
 sayHello()
 
