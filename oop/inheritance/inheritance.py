@@ -38,3 +38,23 @@ print(kamaz.name, kamaz.color, kamaz.year)
 kamaz.car_driving("Bishkek")
 print(kamaz.colesa)
 kamaz.load_weight(2000)
+
+
+class City:
+    def __init__(self, name, latitude, longitude):
+        self.name = name
+        self.latitude = latitude
+        self.longitude = longitude
+
+    def get_info_city(self):
+        print("City: ", self.name, "latitude: ", self.latitude, "longitude: ", self.longitude)
+
+
+class Bishkek(City):
+    naselenie = 0
+    def __init__(self, naselenie, name, latitude, longitude):
+        super(Bishkek, self).__init__(name,latitude, longitude)
+        self.naselenie = naselenie
+
+bishkek = Bishkek(naselenie=1000000, name="Bishkek", latitude=42.344, longitude=32.3222)
+bishkek.get_info_city()
