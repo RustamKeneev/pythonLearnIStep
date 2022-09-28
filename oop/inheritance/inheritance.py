@@ -2,7 +2,6 @@
 
 class Car:
     colesa = 4
-
     def __init__(self, name, color, year):
         self.name = name
         self.color = color
@@ -20,9 +19,10 @@ class Car:
 class Truck(Car):#Наследование потомка класа Car
     colesa = 12
 
-    def __init__(self, name, color, year):#Вызываем инициализацию
+    def __init__(self,coles, name, color, year):#Вызываем инициализацию
+        self.colesa = coles
         """Внутри методе __init__ мы должны вызвать метод __init__ предка класса Car"""
-        Car.__init__(self,name, color, year)
+        Car.__init__(self, name, color, year)
         print("Truck is created")
 
     def car_driving(self, city):
@@ -33,7 +33,7 @@ class Truck(Car):#Наследование потомка класа Car
         print("loaded " + str(weight))
 
 
-kamaz = Truck(name='Kamaz 2,0 ',color="Blue", year=2020)
+kamaz = Truck(name='Kamaz 2,0', color="Blue", year=2020, coles=12121221212212122)
 print(kamaz.name, kamaz.color, kamaz.year)
 kamaz.car_driving("Bishkek")
 print(kamaz.colesa)
@@ -56,5 +56,8 @@ class Bishkek(City):
         super(Bishkek, self).__init__(name,latitude, longitude)
         self.naselenie = naselenie
 
+
 bishkek = Bishkek(naselenie=1000000, name="Bishkek", latitude=42.344, longitude=32.3222)
 bishkek.get_info_city()
+print(bishkek.naselenie)
+print(bishkek.name)

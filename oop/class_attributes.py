@@ -10,13 +10,15 @@ mercedes1 = Car(name='LS 300')
 print(mercedes1)
 print(mercedes1.name)
 
+
+
 class CarTwo:
     def __init__(self, name, color, year):
         self.name = name
         self.color = color
         self.year = year
 
-bmw = CarTwo(name="BMW",color="Red",year=2022)
+bmw = CarTwo(name="BMW",color="Red", year=2002)
 print(bmw.name,bmw.color, bmw.year)
 
 bmw2 = CarTwo("BMW","Red",2022)
@@ -25,7 +27,7 @@ print(bmw2)
 class CarThree:
     colesa = 4
     def __init__(self, name, color, year):
-        self.name = name
+        self.namemsmmsmsm = name
         self.color = color
         self.year = year
 
@@ -34,3 +36,7 @@ print(bmw3.name,bmw3.color, bmw3.year, CarThree.colesa)
 
 cars_colesa = CarThree.colesa
 print(cars_colesa)
+print(CarThree.colesa)
+tetst = CarThree(name="BMW",color="Red", year=2022)
+print(tetst.namemsmmsmsm)
+

@@ -24,4 +24,9 @@ voditel = Taxist(name="Alexander",age=50, staj=3)
 voditel.get_info()
 voditel.staj = 5
 voditel.get_info()
+voditel.staj = 10
+voditel.get_info()
 # voditel.__name()
+person = Persone(name="asdasdas", age=1222)
+print(person.get_info())
+

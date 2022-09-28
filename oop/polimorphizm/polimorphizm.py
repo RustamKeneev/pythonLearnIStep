@@ -23,9 +23,8 @@ class Fish:
     def __init__(self, name):
         self.name = name
 
-
-ak_tosh = Dog("Aktosh")
-mishik = Cat("Tomm")
+ak_tosh = Dog(name="Aktosh")
+mishik = Cat(name="Tomm")
 akkula = Fish(name="AKKKuuullla")
 
 animal_list = [ak_tosh, mishik]
