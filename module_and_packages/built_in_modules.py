@@ -17,11 +17,9 @@ x = random.randint(1, 20)
 print(x)
 
 from random import randint
-y = randint(20, 30)
+y = randint(1, 300)
 print(y)
 
 my_list = [1,2,3,4,5]
 random.shuffle(my_list)
 print(my_list)
-
-
