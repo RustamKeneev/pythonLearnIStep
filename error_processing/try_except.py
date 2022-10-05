@@ -25,10 +25,10 @@ user_dictionary = {'first_name':'Rustam','second_name':'Keneev', 'age':37}
 # print(user_dictionary.get('second_name'))
 # print(user_dictionary.get('second'))
 
-def get_dictionary_values(dictionary, key):
-    try:
-        return dictionary[key]
-    except KeyError:
-        print("Ошибка ключа")
-print(get_dictionary_values(user_dictionary, 'age'))
-print(get_dictionary_values(user_dictionary, 'ф'))
+# def get_dictionary_values(dictionary, key):
+#     try:
+#         return dictionary[key]
+#     except KeyError:
+#         print("Ошибка ключа")
+# print(get_dictionary_values(user_dictionary, 'age'))
+# print(get_dictionary_values(user_dictionary, 'ф'))

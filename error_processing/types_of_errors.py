@@ -2,7 +2,7 @@
 #Типы ошибок
 
 #Syntax Error
-# des function_test():
+# dos function_test():
 #     x = 1 + 1
 #     print(x)
 # function_test()
@@ -11,9 +11,10 @@
 # print(x)
 
 #Type Error
-# len(1)
+# len(110)
 # some_list = [1,2,3,4,5]
-# print(some_list + 22)
+# print(some_list)
+# print(some_list + 12)
 
 #Index Error
 # index_list = [1,2,3]
@@ -22,7 +23,7 @@
 
 #Value Error
 # print(int("333"))
-# print(int("hello"))
+# print(int("123"))
 # print(int([333]))
 
 #Key Error
@@ -33,10 +34,15 @@
 # x = 10
 # x.append(5)
 
-# class Testing():
-#     def __init__(self):
+
+# class Testing:
+#     def __init__(self, name, age):
 #         self.a = 'GeeksforGeeks'
-# 
+#         self.names = name
+#         self.ages = age
+#
 # obj = Testing()
 # print(obj.a)
+# print(obj)
+# print(obj.names)
 # print(obj.b)
