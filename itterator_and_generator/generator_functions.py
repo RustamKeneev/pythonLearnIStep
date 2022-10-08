@@ -19,15 +19,13 @@ def count_up_to(x):
     while count <= x:
         yield count
         count += 1
-
-
 # print(count_up_to(4))
 # counter = count_up_to(4)
-# # print(counter.__next__())
-# # print(counter.__next__())
-# # print(counter.__next__())
-# # print(counter.__next__())
-# # print(counter.__next__())
+# print(counter.__next__())
+# print(counter.__next__())
+# print(counter.__next__())
+# print(counter.__next__())
+# print(counter.__next__())
 #
 # print(next(counter))
 # print(next(counter))
@@ -37,13 +35,13 @@ def count_up_to(x):
 counter = count_up_to(10)
 print(list(count_up_to(7)))
 
-# for number in counter:
-#     print(number)
-
-counter.__next__()
-counter.__next__()
-counter.__next__()
-
 for number in counter:
     print(number)
+
+# counter.__next__()
+# counter.__next__()
+# counter.__next__()
+#
+# for number in counter:
+#     print(number)
 
