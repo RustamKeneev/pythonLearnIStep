@@ -62,3 +62,5 @@ print(character_list)
 
 number_list_two.append(character_list)
 print(number_list_two)
+menu_list  = ["Главная","Каталог","Аптеки"]
+print(menu_list[:])

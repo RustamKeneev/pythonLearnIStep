@@ -26,3 +26,5 @@ def can_fly(name):
 
 def get_arsenal():
 	return choice(('knife', 'handgun', 'machine gun'))
+
+menu = [""]
